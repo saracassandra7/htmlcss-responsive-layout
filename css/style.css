@@ -37,7 +37,7 @@ main .card {
 }
 
 /*colored section*/
-main .colored-section{
+main .colored-section, main .benefits{
   background-color: #9792e4;
 }
 
@@ -55,6 +55,39 @@ main .colored-section .box{
   background-color: orchid;
 }
 
+/*testimonial section*/
+main .testimonials{
+  text-align: center;
+}
+
+main .testimonials .testimonial-cards{
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+main .testimonials .testimonial-cards .testimonial{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*benefits section*/
+main .benefits .benefit-card{
+  background-color: lightgreen;
+  height: 150px; /*da togliere*/
+  margin-bottom: 20px;
+}
+
+main .benefits h2{
+  text-align: center;
+}
+
+
+
+/*************soluzioni responsive*****************/
+
+
 /*risoluzione tablet*/
 @media screen and (min-width: 768px){
   .container-card{
@@ -66,11 +99,21 @@ main .colored-section .box{
   main .card{
     width: 200px; /*da togliere*/
   }
+
+  main .benefits .benefits-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  main .benefits .benefit-card{
+    width: calc(100% / 2 - 20px);
+  }
 }
 
 /*risoluzione desktop*/
 @media screen and (min-width: 1100px){
-  .header-container, .container-card, .colored-container{
+  .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container{
     width: 70%;
   }
 
@@ -83,5 +126,9 @@ main .colored-section .box{
 
   .colored-container .image, .colored-container .text, .colored-container .box{
     width: calc(100% / 2);
+  }
+
+  main .benefits .benefit-card{
+    width: calc(100% / 3 - 20px);
   }
 }
