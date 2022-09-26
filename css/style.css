@@ -42,16 +42,39 @@ main .colored-section, main .benefits, main .cta{
 }
 
 /*card section*/
-.container-card{
-  display: flex;
-  flex-direction: column;
-}
 
 main .card {
-  background-color: aquamarine;
+  background-color: #b5ddff;
   width: 100%;
-  height: 300px; /*da togliere*/
-  margin: 10px 0;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 25px;
+}
+
+
+main .card img{
+  max-width: 100%;
+}
+
+main .card h2{
+  margin: 20px 0;
+  color: #0084fd;
+}
+
+main .card p{
+  color: #5a6e7f;
+  line-height: 160%;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+main .card-section .text-center{
+  text-align: center;
+}
+
+main .card-section .text-center i{
+  color: #0084fd;
+  font-size: 4rem;
 }
 
 /*colored section*/
@@ -127,12 +150,23 @@ footer{
   .container-card{
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
   }
 
-  main .card{
-    width: 200px; /*da togliere*/
+  main .container-card .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+  
+  main .big-card{
+    width: 65%;
+  }
+
+  main .small-card{
+    width: 32%;
+  }
+
 
   main .benefits .benefits-container, main .about-us .about-container{
     display: flex;
