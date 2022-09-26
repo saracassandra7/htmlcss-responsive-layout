@@ -83,6 +83,14 @@ main .benefits h2{
   text-align: center;
 }
 
+/*about us section*/
+main .about-us .description{
+  background-color: brown;
+}
+
+main .about-us .slogan{
+  background-color: lightpink;
+}
 
 
 /*************soluzioni responsive*****************/
@@ -100,7 +108,7 @@ main .benefits h2{
     width: 200px; /*da togliere*/
   }
 
-  main .benefits .benefits-container{
+  main .benefits .benefits-container, main .about-us .about-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -109,11 +117,19 @@ main .benefits h2{
   main .benefits .benefit-card{
     width: calc(100% / 2 - 20px);
   }
+
+  main .about-us .about-container .description{
+    width: 60%;
+  }
+
+  main .about-us .about-container .slogan{
+    width: 40%;
+  }
 }
 
 /*risoluzione desktop*/
 @media screen and (min-width: 1100px){
-  .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container{
+  .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container, .about-container{
     width: 70%;
   }
 
@@ -130,5 +146,13 @@ main .benefits h2{
 
   main .benefits .benefit-card{
     width: calc(100% / 3 - 20px);
+  }
+
+  main .about-us .about-container .description{
+    width: 70%;
+  }
+
+  main .about-us .about-container .slogan{
+    width: 30%;
   }
 }
