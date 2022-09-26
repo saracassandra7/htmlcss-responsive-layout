@@ -22,6 +22,9 @@ header{
 }
 
 /*main*/
+main .colored-section, main .benefits, main .cta{
+  background-color: #9792e4;
+}
 
 /*card section*/
 .container-card{
@@ -37,9 +40,6 @@ main .card {
 }
 
 /*colored section*/
-main .colored-section, main .benefits{
-  background-color: #9792e4;
-}
 
 main .colored-section .image{
   /*da togliere*/
@@ -92,6 +92,17 @@ main .about-us .slogan{
   background-color: lightpink;
 }
 
+/*cta section*/
+main .cta .cta-container{
+  text-align: center;
+}
+
+/*footer*/
+footer{
+  background-color: #333333;
+  height: 200px;
+  text-align: center;
+}
 
 /*************soluzioni responsive*****************/
 
@@ -125,11 +136,21 @@ main .about-us .slogan{
   main .about-us .about-container .slogan{
     width: 40%;
   }
+
+  main .cta .cta-container .cta-contenuto{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  footer .footer-container{
+    width: 60%;
+  }
+
 }
 
 /*risoluzione desktop*/
 @media screen and (min-width: 1100px){
-  .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container, .about-container{
+  .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container, .about-container, .cta-container{
     width: 70%;
   }
 
@@ -154,5 +175,14 @@ main .about-us .slogan{
 
   main .about-us .about-container .slogan{
     width: 30%;
+  }
+
+  main .cta .cta-container .cta-contenuto{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  footer .footer-container{
+    width: 40%;
   }
 }
