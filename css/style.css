@@ -93,18 +93,42 @@ main .card-section .text-center i{
 
 /*colored section*/
 
-main .colored-section .image{
-  /*da togliere*/
-  background-color: yellow;
-  height: 150px;
+main .colored-container{
+  padding: 30px 0;
 }
 
-main .colored-section .text{
-  background-color: blue;
+main .colored-section img{
+  max-width: 90%;
+  
+}
+
+main .colored-section .text h2{
+  color: white;
+  margin: 20px 0;
+}
+
+main .colored-section .text p, main .colored-section .box p{
+  line-height: 160%;
+  font-size: 1.1rem;
+  margin: 30px 0;
+}
+
+main .colored-section .text p{
+  color: white;
 }
 
 main .colored-section .box{
-  background-color: orchid;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+main .colored-section .box i{
+  background-color: #9792e4;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 /*testimonial section*/
@@ -221,6 +245,7 @@ footer{
     width: 70%;
   }
 
+  /*header*/
   header .header-container .burger-menu{
     display: none;
   }
@@ -244,21 +269,35 @@ footer{
     cursor: pointer;
   }
 
+  /*colored section*/
   .colored-container{
-    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+
+  .colored-section .left{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+ 
   }
 
-  .colored-container .image, .colored-container .text, .colored-container .box{
-    width: calc(100% / 2);
+  .left, .box{
+    width: 45%;
   }
 
+  .box{
+    height: 40%;
+  }
+
+
+  /*benefits section*/
   main .benefits .benefit-card{
     width: calc(100% / 3 - 20px);
   }
 
+  /*about us*/
   main .about-us .about-container .description{
     width: 70%;
   }
@@ -267,11 +306,13 @@ footer{
     width: 30%;
   }
 
+  /*cta*/
   main .cta .cta-container .cta-contenuto{
     width: 50%;
     margin: 0 auto;
   }
 
+  /*footer*/
   footer .footer-container{
     width: 40%;
   }
