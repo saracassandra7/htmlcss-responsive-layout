@@ -13,6 +13,19 @@ body{
   margin: 0 auto;
 }
 
+.btn{
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.btn-blue{
+  padding: 15px 50px;
+  text-align: center;
+  background-color: #0084fd;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+
 /*header*/
 header{
   background-color: #0084fd;
@@ -54,6 +67,7 @@ main .card {
 
 main .card img{
   max-width: 100%;
+
 }
 
 main .card h2{
@@ -161,6 +175,10 @@ footer{
   
   main .big-card{
     width: 65%;
+  }
+
+  main .big-card .card{
+    display: flex;
   }
 
   main .small-card{
