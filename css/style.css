@@ -36,6 +36,25 @@ main .card {
   margin: 10px 0;
 }
 
+/*colored section*/
+main .colored-section{
+  background-color: #9792e4;
+}
+
+main .colored-section .image{
+  /*da togliere*/
+  background-color: yellow;
+  height: 150px;
+}
+
+main .colored-section .text{
+  background-color: blue;
+}
+
+main .colored-section .box{
+  background-color: orchid;
+}
+
 /*risoluzione tablet*/
 @media screen and (min-width: 768px){
   .container-card{
@@ -51,7 +70,18 @@ main .card {
 
 /*risoluzione desktop*/
 @media screen and (min-width: 1100px){
-  .header-container, .container-card{
+  .header-container, .container-card, .colored-container{
     width: 70%;
+  }
+
+  .colored-container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .colored-container .image, .colored-container .text, .colored-container .box{
+    width: calc(100% / 2);
   }
 }
