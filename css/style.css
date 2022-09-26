@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
   width: 90%;
   margin: 0 auto;
@@ -19,6 +23,17 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+}
+
+header .header-container .burger-menu{
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+header .header-container .menu{
+  display: none;
 }
 
 /*main*/
@@ -152,6 +167,29 @@ footer{
 @media screen and (min-width: 1100px){
   .header-container, .container-card, .colored-container, .testimonial-container, .benefits-container, .about-container, .cta-container{
     width: 70%;
+  }
+
+  header .header-container .burger-menu{
+    display: none;
+  }
+
+  header .header-container .menu{
+    display: block;
+  }
+
+  header .header-container .menu ul{
+    display: flex;
+    list-style: none;
+  }
+
+  header .header-container .menu ul li{
+    padding-left: 15px;
+  }
+
+  header .header-container .menu ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
   }
 
   .colored-container{
